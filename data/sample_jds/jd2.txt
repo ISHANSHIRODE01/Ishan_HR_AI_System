@@ -1,0 +1,11 @@
+Job Title: Backend Software Engineer
+
+Requirements:
+- Strong experience with Java and Spring Boot.
+- Understanding of RESTful API design and cloud deployment.
+- Familiarity with databases such as MySQL or PostgreSQL.
+- Experience with CI/CD pipelines and version control (Git).
+
+Responsibilities:
+- Build, test, and maintain backend services.
+- Collaborate with frontend and DevOps teams.

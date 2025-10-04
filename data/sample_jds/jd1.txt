@@ -1,0 +1,11 @@
+Job Title: Data Scientist
+
+Requirements:
+- Proficiency in Python, machine learning, and statistical modeling.
+- Experience with libraries like Scikit-learn, TensorFlow, and Pandas.
+- Knowledge of data preprocessing, NLP, and visualization.
+- Ability to deploy models using Flask or FastAPI.
+
+Responsibilities:
+- Analyze data trends and build predictive models.
+- Communicate insights with stakeholders.

@@ -1,0 +1,12 @@
+Jane Smith
+Email: janesmith@gmail.com
+
+Summary:
+Software Engineer with a strong focus on backend systems and API development.
+
+Skills:
+Java, Spring Boot, REST APIs, MySQL, AWS, Docker, Git
+
+Experience:
+- Built scalable microservices for an e-commerce platform.
+- Integrated third-party APIs and improved system performance by 30%.
