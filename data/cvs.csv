@@ -1,0 +1,101 @@
+candidate_id,name,education,experience_years,skills,location
+1,Jennifer King,M.Sc Data Science,3,"TensorFlow, Python, Git, Statistics, Deep Learning",North Sheilamouth
+2,Joshua Ware,B.E. Computer,2,"SQL, Machine Learning, Data Analysis, Pandas, Computer Vision",Christinaview
+3,Heather Cole,B.E. Computer,7,"Flask, Scikit-learn, SQL, NLP, Statistics",West David
+4,Leslie Norman,B.E. IT,6,"Computer Vision, NLP, Python, React, Flask",Stephanieview
+5,William Wilson,B.E. Computer,3,"Pandas, Statistics, Python, Data Analysis, Git",Williamsport
+6,Sally Turner,B.E. IT,7,"Python, Machine Learning, Data Analysis, TensorFlow, Deep Learning",Lake Colin
+7,Stacy Price,B.E. Computer,8,"Deep Learning, Docker, Pandas, Python, Computer Vision",Pamelaborough
+8,Erica Chen,B.E. IT,0,"Python, Statistics, React, Scikit-learn, SQL",South Kara
+9,Michael Green,B.E. IT,7,"Python, Docker, TensorFlow, Git, Machine Learning",Port Anthonyport
+10,Carly Williams,B.Tech AI,1,"Git, Scikit-learn, Docker, Python, TensorFlow",Stephensfort
+11,Catherine Cook,B.E. IT,3,"Flask, React, NLP, Deep Learning, Data Analysis",South Aliciahaven
+12,Diane Weaver,M.Sc Data Science,3,"Statistics, Docker, Scikit-learn, TensorFlow, SQL",Smithville
+13,Mary Diaz,M.Sc Data Science,0,"Data Analysis, Pandas, NLP, Computer Vision, Machine Learning",Lake Timothy
+14,Jeffrey Burgess,B.Tech AI,6,"Flask, Pandas, Deep Learning, SQL, Scikit-learn",East Shaunborough
+15,Thomas Kaufman,M.Sc Data Science,4,"TensorFlow, Flask, React, NLP, Scikit-learn",North Amandaborough
+16,Christine Graves,B.Tech AI,4,"Statistics, Pandas, React, SQL, Flask",New Desiree
+17,Jacqueline Bowen,B.Tech AI,3,"TensorFlow, Statistics, Computer Vision, Data Analysis, React",South Terrishire
+18,Heather Andrews,B.Tech AI,4,"Git, Statistics, TensorFlow, React, SQL",Port Johnny
+19,Melissa Rodriguez,B.E. Computer,6,"Deep Learning, SQL, Pandas, Machine Learning, Docker",Bryantown
+20,Brandon Reid,B.E. IT,8,"NLP, Statistics, Scikit-learn, Computer Vision, Deep Learning",Sharonbury
+21,Daniel Long,B.Tech AI,1,"Data Analysis, SQL, TensorFlow, Python, Docker",Richardbury
+22,Jacob Williams,B.E. IT,2,"Docker, NLP, Git, Scikit-learn, Data Analysis",West Angel
+23,Michelle Lewis,M.Sc Data Science,4,"React, Scikit-learn, Data Analysis, TensorFlow, Docker",West Mariaborough
+24,Chad Taylor,B.Tech AI,2,"Pandas, NLP, Flask, Git, Statistics",West Cathy
+25,Mary Davis,B.E. Computer,1,"Pandas, Statistics, Machine Learning, Computer Vision, Data Analysis",Port Bradview
+26,Cathy Jackson MD,M.Sc Data Science,5,"NLP, Git, Docker, Computer Vision, Scikit-learn",Penabury
+27,Deborah Dudley,B.Tech AI,4,"Pandas, Computer Vision, Scikit-learn, Flask, React",Joshuaville
+28,Sonya Serrano,B.E. Computer,4,"NLP, Statistics, Python, Scikit-learn, Machine Learning",North Joshuaport
+29,Adrienne Davies,B.E. IT,5,"Statistics, Python, Pandas, Scikit-learn, Git",West Aaronview
+30,Diana Maxwell,M.Sc Data Science,0,"Computer Vision, NLP, Docker, Flask, Pandas",Lake Joseph
+31,Thomas Miller,B.Tech AI,3,"Flask, Statistics, Data Analysis, NLP, React",West Erikatown
+32,Kimberly Poole,B.E. Computer,4,"Git, TensorFlow, Python, Deep Learning, Scikit-learn",South Judith
+33,Gary Hansen,B.Tech AI,6,"React, Computer Vision, Data Analysis, SQL, TensorFlow",New Pamelaberg
+34,William Vargas,B.E. IT,0,"Statistics, TensorFlow, Deep Learning, Machine Learning, SQL",Coxshire
+35,Luis Wallace,M.Sc Data Science,8,"Pandas, Data Analysis, Computer Vision, TensorFlow, Docker",Heatherborough
+36,Kimberly Valencia,M.Sc Data Science,4,"Scikit-learn, NLP, Pandas, Deep Learning, Python",Rothton
+37,Evan Nelson,B.E. IT,6,"Docker, Computer Vision, Data Analysis, Pandas, Git",Watsonport
+38,Eric Miller,B.E. Computer,1,"Scikit-learn, Flask, SQL, Python, Docker",Port Carlshire
+39,Michaela Green,B.E. IT,7,"React, TensorFlow, Data Analysis, Git, Machine Learning",Lake Michael
+40,Megan Martinez,M.Sc Data Science,3,"Flask, Scikit-learn, Git, Python, React",South Cindy
+41,Jennifer Montgomery,B.E. Computer,0,"TensorFlow, Docker, Flask, Pandas, Machine Learning",West Richardville
+42,Robert Franco,B.E. Computer,8,"Scikit-learn, Pandas, Statistics, NLP, SQL",Miguelland
+43,Rhonda Evans,B.E. IT,6,"TensorFlow, React, NLP, Data Analysis, Python",Parkerfurt
+44,Mark James,B.E. IT,2,"TensorFlow, Scikit-learn, Git, NLP, Python",Barnesmouth
+45,Alexis Turner,B.Tech AI,8,"Deep Learning, Data Analysis, TensorFlow, Git, Python",East Andrew
+46,Ryan Snyder,B.E. IT,2,"React, Computer Vision, Data Analysis, TensorFlow, Statistics",Bethanymouth
+47,Kaitlin Fisher,B.Tech AI,1,"SQL, Data Analysis, Pandas, Machine Learning, Git",Markhaven
+48,David Johnson,B.Tech AI,6,"Pandas, Data Analysis, Git, React, Machine Learning",Heatherborough
+49,Michael Hernandez,B.Tech AI,0,"Computer Vision, Pandas, Git, TensorFlow, Data Analysis",West Amber
+50,Kenneth Howard,B.E. Computer,1,"Statistics, Scikit-learn, Pandas, Deep Learning, NLP",North Bryanside
+51,Ashley Webb,B.Tech AI,8,"Deep Learning, Statistics, Data Analysis, Git, Pandas",Mannberg
+52,Johnny Ware,M.Sc Data Science,0,"React, Python, Scikit-learn, SQL, Git",South Danielle
+53,Evelyn Doyle,B.Tech AI,2,"Python, Pandas, Scikit-learn, Flask, TensorFlow",Port Eric
+54,Diana Johnson,M.Sc Data Science,0,"Pandas, Scikit-learn, Docker, SQL, Data Analysis",Webbberg
+55,Jessica Hill,B.E. IT,8,"Flask, SQL, Python, Docker, TensorFlow",New Jamesside
+56,Debra Jones,B.E. Computer,1,"Machine Learning, Python, NLP, Git, Computer Vision",North Rhondabury
+57,Jonathan Patel,B.E. Computer,5,"Scikit-learn, Data Analysis, Flask, React, NLP",Bradleyland
+58,Pamela Frazier,B.E. IT,5,"Computer Vision, Python, TensorFlow, NLP, React",New Codymouth
+59,Sheila Brown,B.E. IT,5,"React, Python, Computer Vision, Flask, NLP",Cainmouth
+60,Briana Brooks,B.E. Computer,7,"Computer Vision, Flask, Statistics, Scikit-learn, Git",Lake Kimberly
+61,Cassandra Cooper,B.E. IT,0,"Deep Learning, Flask, Data Analysis, Python, SQL",Warrenbury
+62,Joel Mendoza,B.E. IT,0,"Pandas, TensorFlow, NLP, Scikit-learn, Machine Learning",Payneport
+63,Natalie Lee,M.Sc Data Science,6,"Machine Learning, SQL, Computer Vision, TensorFlow, Scikit-learn",South Gabriel
+64,Jennifer Mendoza,M.Sc Data Science,0,"SQL, Data Analysis, Deep Learning, NLP, Machine Learning",East Angela
+65,Brittany Mccarthy,M.Sc Data Science,8,"React, TensorFlow, Pandas, NLP, Deep Learning",Zacharymouth
+66,Amber Perez,B.Tech AI,2,"Python, Pandas, SQL, Deep Learning, Machine Learning",North Hayley
+67,Nancy Reed,M.Sc Data Science,4,"Python, React, SQL, Machine Learning, Pandas",Santiagoton
+68,John Conway,B.E. Computer,5,"Scikit-learn, Data Analysis, Computer Vision, Machine Learning, NLP",Monicabury
+69,Gina Todd,B.E. IT,5,"NLP, Docker, SQL, React, Git",Williamsburgh
+70,Aaron Cuevas,B.E. IT,7,"Docker, Statistics, NLP, TensorFlow, Data Analysis",South Erinstad
+71,Evan Johnson,B.E. IT,6,"Statistics, Pandas, Python, Data Analysis, Computer Vision",North Nathan
+72,Olivia Thompson,M.Sc Data Science,8,"SQL, Flask, Docker, Python, Git",West Danielleland
+73,Shirley Trujillo,B.Tech AI,8,"TensorFlow, SQL, Git, Pandas, Flask",South Johnnyshire
+74,Mr. Parker George,B.E. IT,5,"Computer Vision, React, Statistics, TensorFlow, SQL",East Bethchester
+75,Rachel Scott,B.E. Computer,3,"Statistics, Docker, Deep Learning, React, Flask",Mosleytown
+76,Anthony Taylor Jr.,B.E. Computer,2,"Data Analysis, Computer Vision, NLP, SQL, Git",Jesusborough
+77,Jason Lee,B.E. IT,0,"Docker, Python, Machine Learning, Flask, Computer Vision",New Haley
+78,Katherine Taylor,B.E. Computer,4,"Deep Learning, Pandas, Data Analysis, Machine Learning, Python",Keithview
+79,Cynthia Freeman,B.E. Computer,6,"Statistics, Deep Learning, Data Analysis, Flask, Pandas",Dickersontown
+80,Troy Waller,M.Sc Data Science,6,"React, Pandas, Machine Learning, Scikit-learn, Docker",South Lindsey
+81,Joshua Rogers,M.Sc Data Science,8,"NLP, Computer Vision, Machine Learning, Flask, Deep Learning",Popechester
+82,Dave Rodriguez,B.E. IT,6,"Scikit-learn, Git, TensorFlow, SQL, Computer Vision",North Jameshaven
+83,Jennifer Roth,B.Tech AI,0,"SQL, Pandas, Computer Vision, Data Analysis, Machine Learning",Lake Kaitlyn
+84,Tamara Clements,M.Sc Data Science,1,"Flask, Docker, Python, Scikit-learn, NLP",Stephaniehaven
+85,James Pacheco,M.Sc Data Science,7,"Scikit-learn, SQL, Docker, Computer Vision, Pandas",Michaelhaven
+86,Cameron Johnson,M.Sc Data Science,5,"Scikit-learn, Statistics, Python, Deep Learning, SQL",Robertsonton
+87,William Day,B.Tech AI,5,"Pandas, Data Analysis, NLP, Flask, Git",Pacemouth
+88,Jordan Watts,B.E. Computer,4,"Scikit-learn, Git, Deep Learning, Pandas, SQL",East Scott
+89,Shane Sandoval,M.Sc Data Science,5,"Scikit-learn, NLP, Flask, Pandas, Data Analysis",New Williamstad
+90,Joanne Robbins,B.E. IT,0,"Docker, Git, Data Analysis, TensorFlow, Statistics",North Joann
+91,Jacqueline Jones,B.E. Computer,3,"Deep Learning, Python, SQL, NLP, Machine Learning",New Sherri
+92,Kimberly Pitts,B.E. IT,0,"Statistics, Machine Learning, TensorFlow, Data Analysis, Pandas",Johnsonstad
+93,Jennifer Bell,B.Tech AI,8,"Scikit-learn, NLP, Python, Flask, Docker",New William
+94,Karen Jenkins,M.Sc Data Science,5,"Scikit-learn, Pandas, Statistics, Flask, Docker",East Dannyfurt
+95,Miss Tracey Johnson,B.E. Computer,6,"Pandas, Data Analysis, Flask, Machine Learning, Git",North Jesustown
+96,Kimberly Humphrey,B.Tech AI,3,"Computer Vision, React, SQL, Flask, Machine Learning",Thompsonfurt
+97,Brittany Clark,B.E. IT,7,"Docker, Flask, Pandas, Machine Learning, Computer Vision",South Debbie
+98,Wesley Martinez,M.Sc Data Science,7,"TensorFlow, Flask, Pandas, Machine Learning, Scikit-learn",Williamston
+99,Seth Watson,B.E. Computer,4,"Machine Learning, React, Pandas, Deep Learning, Statistics",Haasview
+100,Patricia Miller,B.Tech AI,8,"Git, Python, Deep Learning, Machine Learning, Data Analysis",Brandtburgh

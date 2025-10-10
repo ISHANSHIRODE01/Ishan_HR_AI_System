@@ -1,0 +1,11 @@
+jd_id,title,description
+1,Data Scientist,"Analyze data, build ML models, and deliver insights using Python and statistics."
+2,ML Engineer,Deploy scalable machine learning models using TensorFlow and Docker.
+3,Frontend Developer,Develop responsive UIs using React and integrate with backend APIs.
+4,Backend Developer,Build RESTful APIs using Flask or FastAPI and manage databases with SQL.
+5,Data Analyst,Perform exploratory data analysis and create visual reports with Pandas and Matplotlib.
+6,AI Researcher,"Work on deep learning models, optimization, and new AI architectures."
+7,DevOps Engineer,"Automate deployment pipelines, manage Docker containers, and CI/CD processes."
+8,NLP Engineer,Develop NLP pipelines for sentiment analysis and chatbot systems.
+9,Computer Vision Engineer,Design and implement object detection and image classification models.
+10,Full Stack Developer,Build complete web solutions integrating frontend and backend technologies.

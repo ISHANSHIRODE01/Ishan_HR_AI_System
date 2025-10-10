@@ -2,7 +2,7 @@ import os
 import pandas as pd
 from utils.matching_engine import compute_similarity
 from utils.sentiment_analyzer import analyze_sentiment
-from utils.rl_agent import train_rl_agent
+from utils.rl_agent import train_rl_agent, ACTIONS
 from utils.decision_engine import make_decision
 from utils.visualization import generate_all_plots
 
@@ -27,16 +27,16 @@ def load_text_files(directory, prefix, count):
     return texts
 
 # -------------------
-# New: predict function for Flask/Streamlit
+# Updated predict function
 # -------------------
 def predict(cv_texts, jd_texts, feedback_df=None):
     """
-    cv_texts: list of CV texts (strings)
-    jd_texts: list of JD texts (strings)
+    cv_texts: list of CV texts
+    jd_texts: list of JD texts
     feedback_df: optional DataFrame of feedbacks
     Returns: final decision DataFrame
     """
-    # Step 1: Match CVs ↔ JDs
+    # Step 1: Compute CV ↔ JD similarity
     match_df = compute_similarity(cv_texts, jd_texts)
 
     # Step 2: Sentiment Analysis (optional)
@@ -45,55 +45,58 @@ def predict(cv_texts, jd_texts, feedback_df=None):
     else:
         sentiment_df = pd.DataFrame()
 
-    # Step 3: Train RL Agent
-    states = ["High", "Medium", "Low"]
-    rewards = {"High": 1, "Medium": 0, "Low": -1}
+    # Step 3: Generate automatic rewards for RL agent
+    states = [f"cv_{i}" for i in range(len(cv_texts))]
+    rewards = {}
+    for i, cv in enumerate(cv_texts):
+        rewards[states[i]] = {}
+        for action in ACTIONS:
+            if action == "Hire":
+                # Simple reward: number of common words with JD i
+                rewards[states[i]][action] = len(set(cv.split()) & set(jd_texts[i].split()))
+            elif action == "Reject":
+                rewards[states[i]][action] = 0
+            else:  # Reassign
+                rewards[states[i]][action] = 0.5
+
+    # Step 4: Train RL Agent
     q_table = train_rl_agent(states, rewards)
 
-    # Step 4: Make Final Decision
+    # Step 5: Make final decision
     final_df = make_decision(match_df, sentiment_df, q_table)
 
     return final_df
 
 # -------------------
-# Existing main workflow
+# Main workflow
 # -------------------
 def main():
-    # Step 0: Load CVs and JDs
+    # Load CVs and JDs
     cv_texts = load_text_files(CV_DIR, "cv", 2)
     jd_texts = load_text_files(JD_DIR, "jd", 2)
-    
-    # Step 1: Match CVs ↔ JDs
-    match_df = compute_similarity(cv_texts, jd_texts)
-    match_csv = os.path.join(OUTPUT_DIR, "match_scores.csv")
-    match_df.to_csv(match_csv, index=False)
-    print(f"📄 CV-JD similarity scores saved to {match_csv}")
 
-    # Step 2: Sentiment Analysis
+    # Load feedbacks if available
     if os.path.exists(FEEDBACK_FILE):
         feedback_df = pd.read_csv(FEEDBACK_FILE)
-        sentiment_df = analyze_sentiment(feedback_df)
-        sentiment_csv = os.path.join(OUTPUT_DIR, "sentiment_results.csv")
-        sentiment_df.to_csv(sentiment_csv, index=False)
-        print(f"📄 Sentiment analysis results saved to {sentiment_csv}")
     else:
         print(f"⚠️ Feedback file not found: {FEEDBACK_FILE}")
-        sentiment_df = pd.DataFrame()
+        feedback_df = pd.DataFrame()
 
-    # Step 3: Train RL Agent
-    states = ["High", "Medium", "Low"]
-    rewards = {"High": 1, "Medium": 0, "Low": -1}
-    q_table = train_rl_agent(states, rewards)
-    print("🤖 RL agent training completed")
+    # Get final AI decisions
+    final_df = predict(cv_texts, jd_texts, feedback_df)
 
-    # Step 4: Make Final Decision
-    final_df = make_decision(match_df, sentiment_df, q_table)
+    # Save outputs
     final_csv = os.path.join(OUTPUT_DIR, "final_results.csv")
     final_df.to_csv(final_csv, index=False)
     print(f"✅ Final decisions saved to {final_csv}")
 
-    # Step 5: Generate Visualizations
+    # Optionally generate visualizations
     try:
+        match_df = compute_similarity(cv_texts, jd_texts)
+        if not feedback_df.empty:
+            sentiment_df = analyze_sentiment(feedback_df)
+        else:
+            sentiment_df = pd.DataFrame()
         generate_all_plots(match_df, sentiment_df)
         print("📊 Visualizations generated successfully")
     except Exception as e:

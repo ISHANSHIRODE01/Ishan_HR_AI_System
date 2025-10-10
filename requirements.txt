@@ -7,3 +7,10 @@ textblob==0.18.0
 matplotlib==3.9.2
 joblib==1.4.2
 seaborn==0.13.2
+
+--- Required for Streamlit Dashboard ---
+streamlit==1.37.0
+plotly==5.22.0
+
+--- Required for Gemini LLM Integration in app.py ---
+google-genai==0.16.0

@@ -1,4 +1,51 @@
-candidate_id,feedback
-CV1,The candidate performed well and showed strong problem-solving skills.
-CV2,Average communication skills but technically sound.
-CV3,Needs improvement in teamwork and punctuality.
+feedback_id,candidate_id,jd_id,feedback_score,comment
+1,74,8,0,Excellent match for the role.
+2,53,10,0,Strong technical foundation.
+3,53,10,-1,Weak in deployment skills.
+4,70,5,1,Ideal candidate for AI research.
+5,53,8,1,Needs more practical experience.
+6,61,4,1,Ideal candidate for AI research.
+7,69,6,1,Shows good analytical thinking.
+8,78,1,-1,Needs more practical experience.
+9,47,10,-1,Lacks communication skills.
+10,97,10,1,Strong technical foundation.
+11,13,6,1,Requires better project experience.
+12,33,4,0,Ideal candidate for AI research.
+13,82,4,-1,Lacks communication skills.
+14,36,8,0,Ideal candidate for AI research.
+15,39,4,1,Requires better project experience.
+16,65,5,1,Excellent match for the role.
+17,47,3,1,Excellent match for the role.
+18,42,1,0,Strong technical foundation.
+19,52,10,0,Shows good analytical thinking.
+20,80,6,1,Not suitable for current role.
+21,62,4,0,Excellent match for the role.
+22,69,7,1,Good problem-solving abilities.
+23,18,4,-1,Excellent match for the role.
+24,97,7,0,Shows good analytical thinking.
+25,7,3,0,Not suitable for current role.
+26,62,8,0,Ideal candidate for AI research.
+27,73,7,0,Excellent match for the role.
+28,69,6,-1,Good problem-solving abilities.
+29,81,7,1,Strong technical foundation.
+30,42,1,0,Lacks communication skills.
+31,62,1,-1,Good problem-solving abilities.
+32,9,1,0,Requires better project experience.
+33,55,8,1,Shows good analytical thinking.
+34,38,9,1,Ideal candidate for AI research.
+35,46,5,-1,Strong technical foundation.
+36,45,3,1,Lacks communication skills.
+37,96,3,1,Weak in deployment skills.
+38,100,1,-1,Strong technical foundation.
+39,63,9,1,Not suitable for current role.
+40,75,1,0,Requires better project experience.
+41,27,7,-1,Ideal candidate for AI research.
+42,35,9,1,Weak in deployment skills.
+43,54,3,1,Strong technical foundation.
+44,72,4,0,Requires better project experience.
+45,68,3,0,Not suitable for current role.
+46,3,7,1,Good problem-solving abilities.
+47,40,9,0,Lacks communication skills.
+48,18,10,-1,Not suitable for current role.
+49,54,5,1,Weak in deployment skills.
+50,57,4,-1,Excellent match for the role.
