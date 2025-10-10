@@ -1,79 +1,41 @@
-# Ishan HR AI System 🤖💼
+# 🤖 HR RL Agent: Adaptive Candidate Screening System
 
-**AI-powered HR assistant for CV-JD matching, sentiment analysis, and intelligent hiring decisions.**
-
----
-
-## 🚀 Features
-
-* **CV/JD Matching:** AI embeddings + similarity scoring + RL-based rules
-* **Sentiment Analysis:** Classifies feedback as positive, negative, or neutral
-* **Reinforcement Learning Agent:** Optimizes hiring decisions based on past feedback
-* **Decision Engine:** Combines all outputs → Hire / Reject / Reassign
-* **Visualizations:** Confusion matrix, similarity graphs, sentiment pie, RL reward tracking
+This project implements a **Reinforcement Learning (RL) Agent** that automates candidate screening decisions by **learning adaptively from live HR feedback**.  
+It connects a **Python backend (Flask)**, **Gemini LLM for feedback summarization**, and a **Streamlit dashboard** for transparent visualization of the agent’s decision-making.
 
 ---
 
-## ⚡ Quick Start
+## 🚀 Key Features
 
+- **🧠 Adaptive Learning:**  
+  Uses **Q-Learning** to continuously update its decision policy based on real HR feedback.
+
+- **⚙️ Automation via API:**  
+  Exposes a **REST API endpoint** to integrate with automation tools like **n8n** or **Zapier**.
+
+- **💬 LLM Integration (Gemini):**  
+  Summarizes long HR feedback comments into **concise, actionable insights** for notifications.
+
+- **📊 Transparent Dashboard:**  
+  The **Streamlit dashboard** visualizes:
+  - Reward history (agent learning progress)
+  - Current Q-Table (decision policy)
+
+---
+
+## 🛠️ Setup and Installation
+
+### 🔹 Prerequisites
+- Python **3.9+**
+- Active **Gemini API Key**
+
+---
+
+### 1️⃣ Clone and Install Dependencies
 ```bash
-git clone https://github.com/ISHANSHIRODE01/Ishan_HR_AI_System.git
+# Clone the repository
+git clone <repo-url>
 cd Ishan_HR_AI_System
 
-# Optional: create virtual environment
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-
-pip install -r requirements.txt
-
-# Run the system
-python main.py  # or app.py
-```
-
-**Notebook Demo:** `notebooks/Ishan_HR_AI_System_demo.ipynb`
-
-**Flask API:** `python app.py` → POST JSON to `/predict`
-
----
-
-## 📂 Project Structure
-
-```
-Ishan_HR_AI_System/
-│
-├─ main.py / app.py
-├─ requirements.txt
-├─ data/           # Sample CVs, JDs, feedbacks
-├─ models/         # Pre-trained models
-├─ utils/          # Preprocessing, scoring, RL logic
-├─ notebooks/      # End-to-end demo
-└─ visualizations/ # Generated charts
-```
-
----
-
-## 🖼 Example Output
-
-| CV_ID | JD_ID | Similarity | Sentiment | RL Decision | Final Decision |
-| ----- | ----- | ---------- | --------- | ----------- | -------------- |
-| CV001 | JD001 | 0.87       | Positive  | Hire        | Hire           |
-| CV002 | JD002 | 0.45       | Neutral   | Reject      | Reassign       |
-
----
-
-## 🛠 Bonus
-
-* Flask REST API for easy integration
-* Dockerfile for containerization
-* GitHub Actions: Linting & automated testing
-
----
-
-## 🤝 Contributing
-
-1. Fork the repo
-2. Create a branch (`git checkout -b feature`)
-3. Commit changes (`git commit -m "Add feature"`)
-4. Push branch (`git push origin feature`)
-5. Open a Pull Request
+# Install required Python libraries
+pip install flask pandas numpy scikit-learn textblob streamlit plotly google-genai
