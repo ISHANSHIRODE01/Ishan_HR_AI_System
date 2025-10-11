@@ -67,7 +67,6 @@ class RLAgent:
         # Internal state tracking for the test loop: stores reward/reconsideration count for each pair
         self.pair_tracking = {}
         
-        # --- DAY 3 ADDITION: HISTORY TRACKING FOR VISUALIZATION ---
         self.history = []
         self.total_reward_over_time = 0
         # -----------------------------------------------------------
@@ -165,7 +164,6 @@ class RLAgent:
         new_q = old_q + ALPHA * (reward + GAMMA * next_max_q - old_q)
         self.q_table[s_index][action_taken] = new_q
         
-        # --- DAY 3 ADDITION: LOGGING HISTORY ---
         self.total_reward_over_time += reward
         self.history.append({
             'candidate_id': candidate_id,

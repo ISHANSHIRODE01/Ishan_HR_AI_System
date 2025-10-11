@@ -1,0 +1,2 @@
+candidate_id,jd_id,feedback_score,comment,feedback_summary,policy_action
+1,2,4,"Strong technical match, minor communication issue.",⚠️ Gemini Summary incomplete (Reason: MAX_TOKENS).,accept
